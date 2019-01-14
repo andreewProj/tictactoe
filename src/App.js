@@ -1,28 +1,38 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, {Component} from 'react';
+// import {BrowserRouter,Route,Switch} from 'react-router-dom';
+
+import ButtonAppBar from "./templates/ButtonAppBar";
+import Board from "./templates/Board";
+import Square from "./templates/Square";
+import Game from "./templates/Game";
+// import InfoPage from "./pages/InfoPage";
+// import RegPage from "./pages/RegPage";
+// import PrivatePage from "./pages/PrivatePage";
+// import CharactersPage from "./pages/CharactersPage";
+// import HeroPage from "./pages/HeroPage";
+
+// вызвать homepage
 
 class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
-    );
-  }
+
+    render() {
+
+
+        return (
+            <div>
+                <ButtonAppBar></ButtonAppBar>
+                <br/>
+                <Game>
+                    <Board>
+                        <Square></Square>
+                    </Board>
+                </Game>
+
+
+            </div>
+
+        );
+    }
 }
 
 export default App;

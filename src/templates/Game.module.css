@@ -1,0 +1,15 @@
+.status {
+    margin-bottom: 10px;
+}
+
+.game {
+    display: flex;
+    flex-direction: row;
+}
+
+.gameInfo {
+    margin-left: 20px;
+}
+.gameBoard {
+background-color: red;
+}
